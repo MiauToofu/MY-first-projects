@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+    <style>
+        body, html {
+            margin: 0;
+            height: 100%;
+        }
+
+        .event-area-container {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .event-area {
+            background: black;
+            font: normal 20pt Arial;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="event-area-container">
+        <div class="event-area">
+            ...
+        </div>
+    </div>
+
+    <script>
+        let eventarea = document.querySelector(".event-area")
+        eventarea.addEventListener('click', mouseclick)
+        eventarea.addEventListener('mouseenter', mouseenter)
+        eventarea.addEventListener('mouseout', mouseout)
+
+        function mouseclick() {
+            eventarea.innerHTML = 'kkkkkkkkkk'
+        }
+
+        function mouseenter() {
+            eventarea.style.background = "url('./elgatinho.jpg')"
+            eventarea.style.backgroundSize = "cover"
+            eventarea.innerHTML = 'miauuuu'
+        }
+
+        function mouseout() {
+            eventarea.style.background = 'black'
+            eventarea.innerHTML = 'interaja!'
+        }
+
+    </script>
+</body>
+</html>

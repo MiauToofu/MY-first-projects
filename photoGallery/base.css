@@ -1,0 +1,39 @@
+body {
+    background: #1F2024;
+    font-family: 'Noto sans', sans-serif;
+    color: #fff;
+}
+
+body, html {
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    color: #fff;
+
+    box-shadow: 4px 6px #1F2024;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 4px;
+
+    transition: all 500ms;
+
+    overflow: hidden;
+
+    background: #79717A;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card:hover {
+    transform: translateY(-3px) scale(1.02);
+}
