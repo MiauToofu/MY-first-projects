@@ -1,0 +1,45 @@
+@charset "UTF-8";
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.fire-container {
+    width: 100vw;
+    height: 100vh;
+    background: url('./foguinho.gif');
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+main {
+    background-color: #A52502;
+    box-shadow: 5px 5px 8px #1a0505;
+    width: 500px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    position: relative;
+}
+
+.centered {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2 {
+    color: #ff7d32;
+    text-shadow: 1px 1px 2px #ffb560;
+}
+
+p {
+    text-align: justify;
+
+}
+
+body {
+    margin: 0;
+    margin-top: 1%;
+    background-image: linear-gradient(to bottom, #390D02, #a72b15);
+    overflow: hidden;
+}
